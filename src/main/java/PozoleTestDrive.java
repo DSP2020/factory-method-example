@@ -20,25 +20,26 @@ public class PozoleTestDrive {
         PozoleStore pescaderia = new PescadoStore();
 
 
-        Pozole pozole = verdeStore.orderPozole("pollo");
+        Pozole pozole = verdeStore.orderPozole("pierna");
 
         System.out.println("First order is: "+ pozole.getName());
         System.out.println();
         System.out.println();
-        pozole = rojoStore.orderPozole("pollo");
+
+        pozole = rojoStore.orderPozole("pierna");
 
         System.out.println("Second order is: "+ pozole.getName());
         System.out.println();
         System.out.println();
 
-        pozole = menuderia.orderPozole("pollo");
+        pozole = menuderia.orderPozole("pierna");
 
         System.out.println("Third order is: "+ pozole.getName());
         System.out.println();
         System.out.println();
 
-        pozole = pescaderia.orderPozole("pollo");
+        pozole = pescaderia.orderPozole("pierna");
 
-        System.out.println("Third order is: "+ pozole.getName());
+        System.out.println("Last order is: "+ pozole.getName());
     }
 }

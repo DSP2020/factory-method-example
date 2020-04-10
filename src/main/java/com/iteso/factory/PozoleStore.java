@@ -10,6 +10,14 @@ package com.iteso.factory;
 public abstract class PozoleStore {
     private String tipo = "Poi"; //Agregamos un tipo de pozole
 
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     public Pozole orderPozole(String meat){
         Pozole pozole;
 
@@ -24,12 +32,4 @@ public abstract class PozoleStore {
     protected abstract Pozole createPozole(String meat);
 
 
-    ///////////////////////////////////////////////////////////////////////////////////Agregados
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 }
